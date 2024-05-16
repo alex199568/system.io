@@ -48,24 +48,11 @@ class V(
     }
 
     operator fun plus(v: V): V {
-        val newElements = mutableListOf<Float>()
+        return combine(this, v) { f1, f2 -> f1 + f2 }
+    }
 
-        val long: V
-        val short: V
-
-        if (elements.size > v.elements.size) {
-            long = this
-            short = v
-        } else {
-            long = v
-            short = this
-        }
-
-        long.elements.forEachIndexed { index, fl ->
-            newElements += fl + short[index]
-        }
-
-        return V(newElements)
+    operator fun minus(v: V): V {
+        return combine(this, v) { f1, f2 -> f1 - f2 }
     }
 
     override fun toString(): String {
@@ -96,6 +83,26 @@ class V(
             append("y=${this@V[1]}, ")
             append("z=${this@V[2]}, ")
             append("w=${this@V[3]}, ...)")
+        }
+    }
+
+    companion object {
+
+
+        private fun combine(v1: V, v2: V, f: (Float, Float) -> Float): V {
+            val newElements = mutableListOf<Float>()
+
+            if (v1.elements.size > v2.elements.size) {
+                v1.elements.forEachIndexed { index, fl ->
+                    newElements += f(fl, v2[index])
+                }
+            } else {
+                v2.elements.forEachIndexed { index, fl ->
+                    newElements += f(v1[index], fl)
+                }
+            }
+
+            return V(newElements)
         }
     }
 }
