@@ -1,5 +1,7 @@
 package io.system
 
+import kotlin.math.sqrt
+
 class V(
     private val elements: List<Float> = emptyList()
 ) {
@@ -54,6 +56,16 @@ class V(
     operator fun minus(v: V): V {
         return combine(this, v) { f1, f2 -> f1 - f2 }
     }
+
+    val length: Float
+        get() {
+            return sqrt(elements.sumOf { (it * it).toDouble() }).toFloat()
+        }
+
+    val unit: V
+        get() {
+            return this / length
+        }
 
     override fun toString(): String {
 
