@@ -47,6 +47,27 @@ class V(
         return V(elements.map { it / f })
     }
 
+    operator fun plus(v: V): V {
+        val newElements = mutableListOf<Float>()
+
+        val long: V
+        val short: V
+
+        if (elements.size > v.elements.size) {
+            long = this
+            short = v
+        } else {
+            long = v
+            short = this
+        }
+
+        long.elements.forEachIndexed { index, fl ->
+            newElements += fl + short[index]
+        }
+
+        return V(newElements)
+    }
+
     override fun toString(): String {
 
         if (elements.isEmpty()) {
