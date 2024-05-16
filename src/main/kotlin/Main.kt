@@ -1,7 +1,7 @@
 package io.system
 
 fun main() {
-    val v = V2(1, 2)
+    val v = V3(1, 2, 3)
     println(v.unit)
     println(v.unit.length)
 }
