@@ -33,6 +33,10 @@ class V(
             return this[3]
         }
 
+    operator fun unaryMinus(): V {
+        return V(elements.map { -it })
+    }
+
     override fun toString(): String {
 
         if (elements.isEmpty()) {
