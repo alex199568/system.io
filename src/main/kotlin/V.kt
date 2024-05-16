@@ -98,6 +98,19 @@ class V(
         }
     }
 
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as V
+
+        return elements == other.elements
+    }
+
+    override fun hashCode(): Int {
+        return elements.hashCode()
+    }
+
     companion object {
 
 
