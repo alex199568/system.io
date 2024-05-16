@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="V">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="unaryMinus for V">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/V.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/V.kt" afterDir="false" />
@@ -118,7 +118,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715888049851</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="unaryMinus for V">
+      <option name="closed" value="true" />
+      <created>1715888109109</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715888109109</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -127,6 +135,7 @@
     <MESSAGE value="V3" />
     <MESSAGE value="V4" />
     <MESSAGE value="V" />
-    <option name="LAST_COMMIT_MESSAGE" value="V" />
+    <MESSAGE value="unaryMinus for V" />
+    <option name="LAST_COMMIT_MESSAGE" value="unaryMinus for V" />
   </component>
 </project>

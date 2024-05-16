@@ -37,6 +37,16 @@ class V(
         return V(elements.map { -it })
     }
 
+    operator fun times(n: Number): V {
+        val f = n.toFloat()
+        return V(elements.map { it * f })
+    }
+
+    operator fun div(n: Number): V {
+        val f = n.toFloat()
+        return V(elements.map { it / f })
+    }
+
     override fun toString(): String {
 
         if (elements.isEmpty()) {
