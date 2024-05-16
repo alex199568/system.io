@@ -1,9 +1,7 @@
 package io.system
 
 fun main() {
-    val name = "Kotlin"
-    println("Hello, " + name + "!")
-
-    for (i in 1..5) { println("i = $i")
-    }
+    val v = V2(1, 2)
+    println(v.unit)
+    println(v.unit.length)
 }
