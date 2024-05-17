@@ -20,7 +20,10 @@ data class Rational(
     }
 
     override fun toString(): String {
-        return "$nominator/$denominator"
+        val whole = nominator / denominator
+        if (whole == 0L) return "$nominator/$denominator"
+        val part = nominator - whole * denominator
+        return "$whole $part/$denominator"
     }
 
     companion object {
