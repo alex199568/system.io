@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Make rational work with negative numerator">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Negative flag for rational">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" afterDir="false" />
@@ -198,7 +198,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715944683102</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Negative flag for rational">
+      <option name="closed" value="true" />
+      <created>1715945041013</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715945041013</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -217,6 +225,7 @@
     <MESSAGE value="Rational" />
     <MESSAGE value="gcd" />
     <MESSAGE value="Make rational work with negative numerator" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make rational work with negative numerator" />
+    <MESSAGE value="Negative flag for rational" />
+    <option name="LAST_COMMIT_MESSAGE" value="Negative flag for rational" />
   </component>
 </project>

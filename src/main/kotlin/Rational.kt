@@ -49,6 +49,10 @@ data class Rational(
         return result
     }
 
+    operator fun unaryMinus(): Rational {
+        return Rational(-nominator, denominator)
+    }
+
     companion object {
 
         private fun gcd(n: Long, d: Long): Long {
