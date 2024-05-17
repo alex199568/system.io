@@ -163,6 +163,26 @@ data class Rational(
         return this * Rational(d)
     }
 
+    operator fun div(r: Rational): Rational {
+        return this * Rational(r.denominator, r.signedNominator)
+    }
+
+    operator fun div(i: Int): Rational {
+        return this * Rational(1, i)
+    }
+
+    operator fun div(l: Long): Rational {
+        return this * Rational(1, l)
+    }
+
+    operator fun div(f: Float): Rational {
+        return this / Rational(f)
+    }
+
+    operator fun div(d: Double): Rational {
+        return this / Rational(d)
+    }
+
     companion object {
 
         private fun gcd(n: Long, d: Long): Long {
