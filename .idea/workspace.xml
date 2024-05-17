@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Unary minus for rational">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="toFloat and toDouble for Rational">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/N.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" afterDir="false" />
@@ -23,6 +24,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -214,7 +216,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715945131224</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="toFloat and toDouble for Rational">
+      <option name="closed" value="true" />
+      <created>1715945446174</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715945446174</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -235,6 +245,7 @@
     <MESSAGE value="Make rational work with negative numerator" />
     <MESSAGE value="Negative flag for rational" />
     <MESSAGE value="Unary minus for rational" />
-    <option name="LAST_COMMIT_MESSAGE" value="Unary minus for rational" />
+    <MESSAGE value="toFloat and toDouble for Rational" />
+    <option name="LAST_COMMIT_MESSAGE" value="toFloat and toDouble for Rational" />
   </component>
 </project>

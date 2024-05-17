@@ -1,6 +1,6 @@
 package io.system
 
 fun main() {
-    val r1 = Rational(1, 2)
-    println(r1.toDouble())
+    val r = Rational(0.75)
+    println(r)
 }

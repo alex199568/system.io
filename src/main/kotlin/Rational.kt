@@ -1,20 +1,36 @@
 package io.system
 
 import kotlin.math.abs
+import kotlin.math.pow
 
 data class Rational(
-    private var nominator: Long,
-    private var denominator: Long
+    private var nominator: Long = 0L,
+    private var denominator: Long = 1L
 ) {
 
     private var negative = false
 
+    private val signedNominator: Long
+        get() {
+            return if (negative) -nominator else nominator
+        }
+
     constructor(
-        nominator: Number = 0,
-        denominator: Number = 1
+        nominator: Int = 0,
+        denominator: Int = 1
     ) : this(
         nominator.toLong(),
         denominator.toLong()
+    )
+
+    constructor(f: Float = 0f) : this(
+        (f * 10.0.pow(f.decimalPlaces)).toLong(),
+        10.0.pow(f.decimalPlaces).toLong()
+    )
+
+    constructor(d: Double = 0.0) : this(
+        (d * 10.0.pow(d.decimalPlaces)).toLong(),
+        10.0.pow(d.decimalPlaces).toLong()
     )
 
     init {
@@ -69,6 +85,30 @@ data class Rational(
 
     operator fun unaryMinus(): Rational {
         return Rational(-nominator, denominator)
+    }
+
+    operator fun plus(r: Rational): Rational {
+        if (denominator == r.denominator) {
+            return Rational(signedNominator + r.signedNominator, denominator)
+        }
+
+        val n1 = signedNominator * r.denominator
+        val n2 = r.signedNominator * denominator
+        val d = denominator * r.denominator
+
+        return Rational(n1 + n2, d)
+    }
+
+    operator fun minus(r: Rational): Rational {
+        if (denominator == r.denominator) {
+            return Rational(signedNominator - r.signedNominator, denominator)
+        }
+
+        val n1 = signedNominator * r.denominator
+        val n2 = r.signedNominator * denominator
+        val d = denominator * r.denominator
+
+        return Rational(n1 - n2, d)
     }
 
     companion object {
