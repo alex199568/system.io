@@ -1,8 +1,8 @@
 package io.system
 
 data class Rational(
-    val nominator: Long,
-    val denominator: Long
+    private var nominator: Long,
+    private var denominator: Long
 ) {
 
     constructor(
@@ -13,7 +13,21 @@ data class Rational(
         denominator.toLong()
     )
 
+    init {
+        val gcd = gcd(nominator, denominator)
+        nominator /= gcd
+        denominator /= gcd
+    }
+
     override fun toString(): String {
         return "$nominator/$denominator"
+    }
+
+    companion object {
+
+        private fun gcd(n: Long, d: Long): Long {
+            if (d == 0L) return n
+            return gcd(d, n % d)
+        }
     }
 }
