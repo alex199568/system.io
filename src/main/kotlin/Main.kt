@@ -1,11 +1,8 @@
 package io.system
 
 fun main() {
-    val r = Rational(2, 3)
-    val result = r / 2.5
-    println(r)
-    println(r.toDouble())
-    println(result)
-    println(result.toDouble())
-    println(r.toDouble() / 2.5)
+    val v = V(1, 2, 3) * 3.2
+    val v2 = V(2, 3, 4, 1) / 0.7
+    val result = -v + v2
+    println(result.unit.length)
 }

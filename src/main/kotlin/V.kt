@@ -3,34 +3,34 @@ package io.system
 import kotlin.math.sqrt
 
 class V(
-    private val elements: List<Float> = emptyList()
+    private val elements: List<Rational> = emptyList()
 ) {
 
-    operator fun get(i: Int): Float {
+    operator fun get(i: Int): Rational {
         if (i in elements.indices) return elements[i]
-        return 0f
+        return Rational(0)
     }
 
     constructor(vararg numbers: Number) : this(
-        numbers.map { it.toFloat() }
+        numbers.map { Rational(it.toDouble()) }
     )
 
-    val x: Float
+    val x: Rational
         get() {
             return this[0]
         }
 
-    val y: Float
+    val y: Rational
         get() {
             return this[1]
         }
 
-    val z: Float
+    val z: Rational
         get() {
             return this[2]
         }
 
-    val w: Float
+    val w: Rational
         get() {
             return this[3]
         }
@@ -40,13 +40,17 @@ class V(
     }
 
     operator fun times(n: Number): V {
-        val f = n.toFloat()
+        val f = n.toDouble()
         return V(elements.map { it * f })
     }
 
     operator fun div(n: Number): V {
-        val f = n.toFloat()
+        val f = n.toDouble()
         return V(elements.map { it / f })
+    }
+
+    operator fun div(r: Rational): V {
+        return V(elements.map { it / r })
     }
 
     operator fun plus(v: V): V {
@@ -57,9 +61,9 @@ class V(
         return combine(this, v) { f1, f2 -> f1 - f2 }
     }
 
-    val length: Float
+    val length: Rational
         get() {
-            return sqrt(elements.sumOf { (it * it).toDouble() }).toFloat()
+            return Rational(sqrt(elements.sumOf { (it * it).toDouble() }))
         }
 
     val unit: V
@@ -114,8 +118,8 @@ class V(
     companion object {
 
 
-        private fun combine(v1: V, v2: V, f: (Float, Float) -> Float): V {
-            val newElements = mutableListOf<Float>()
+        private fun combine(v1: V, v2: V, f: (Rational, Rational) -> Rational): V {
+            val newElements = mutableListOf<Rational>()
 
             if (v1.elements.size > v2.elements.size) {
                 v1.elements.forEachIndexed { index, fl ->
