@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="double and float constructors for rational">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="More plus and minus operators for rational">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" afterDir="false" />
@@ -231,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715948430134</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="More plus and minus operators for rational">
+      <option name="closed" value="true" />
+      <created>1715948687469</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1715948687469</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -254,6 +262,7 @@
     <MESSAGE value="Unary minus for rational" />
     <MESSAGE value="toFloat and toDouble for Rational" />
     <MESSAGE value="double and float constructors for rational" />
-    <option name="LAST_COMMIT_MESSAGE" value="double and float constructors for rational" />
+    <MESSAGE value="More plus and minus operators for rational" />
+    <option name="LAST_COMMIT_MESSAGE" value="More plus and minus operators for rational" />
   </component>
 </project>

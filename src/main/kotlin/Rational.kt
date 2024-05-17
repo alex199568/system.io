@@ -143,6 +143,26 @@ data class Rational(
         return this - Rational(d)
     }
 
+    operator fun times(r: Rational): Rational {
+        return Rational(signedNominator * r.signedNominator, denominator * r.denominator)
+    }
+
+    operator fun times(i: Int): Rational {
+        return Rational(signedNominator * i, denominator)
+    }
+
+    operator fun times(l: Long): Rational {
+        return Rational(signedNominator * l, denominator)
+    }
+
+    operator fun times(f: Float): Rational {
+        return this * Rational(f)
+    }
+
+    operator fun times(d: Double): Rational {
+        return this * Rational(d)
+    }
+
     companion object {
 
         private fun gcd(n: Long, d: Long): Long {
