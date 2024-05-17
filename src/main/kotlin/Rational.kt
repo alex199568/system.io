@@ -1,5 +1,7 @@
 package io.system
 
+import kotlin.math.abs
+
 data class Rational(
     private var nominator: Long,
     private var denominator: Long
@@ -14,6 +16,7 @@ data class Rational(
     )
 
     init {
+        require(denominator != 0L)
         val gcd = gcd(nominator, denominator)
         nominator /= gcd
         denominator /= gcd
@@ -23,14 +26,17 @@ data class Rational(
         val whole = nominator / denominator
         if (whole == 0L) return "$nominator/$denominator"
         val part = nominator - whole * denominator
-        return "$whole $part/$denominator"
+        if (nominator > 0L) return "$whole $part/$denominator"
+        return "-(${abs(whole)} ${abs(part)}/$denominator)"
     }
 
     companion object {
 
         private fun gcd(n: Long, d: Long): Long {
-            if (d == 0L) return n
-            return gcd(d, n % d)
+            val absN = abs(n)
+            val absD = abs(d)
+            if (d == 0L) return absN
+            return gcd(absD, absN % absD)
         }
     }
 }
