@@ -1,5 +1,6 @@
 package io.system
 
+import java.math.BigDecimal
 import java.math.BigInteger
 import kotlin.math.pow
 
@@ -32,13 +33,13 @@ data class Rational(
     )
 
     constructor(f: Float = 0f) : this(
-        (f * 10.0.pow(f.decimalPlaces)).toBigInt(),
-        10.0.pow(f.decimalPlaces).toBigInt()
+        (f * 10.0.pow(BigDecimal.valueOf(f.toDouble()).scale())).toBigInt(),
+        10.0.pow(BigDecimal.valueOf(f.toDouble()).scale()).toBigInt()
     )
 
     constructor(d: Double = 0.0) : this(
-        (d * 10.0.pow(d.decimalPlaces)).toBigInt(),
-        10.0.pow(d.decimalPlaces).toBigInt()
+        (BigDecimal.valueOf(d) * BigDecimal.TEN.pow(BigDecimal.valueOf(d).scale())).toBigInteger(),
+        BigInteger.TEN.pow(BigDecimal.valueOf(d).scale())
     )
 
     init {
@@ -55,7 +56,7 @@ data class Rational(
         nominator = nominator.abs()
         denominator = denominator.abs()
 
-        val gcd = gcd(nominator, denominator)
+        val gcd = nominator.gcd(denominator)
         nominator /= gcd
         denominator /= gcd
     }
@@ -189,13 +190,5 @@ data class Rational(
 
     operator fun div(d: Double): Rational {
         return this / Rational(d)
-    }
-
-    companion object {
-
-        private fun gcd(n: BigInteger, d: BigInteger): BigInteger {
-            if (d == BigInteger.ZERO) return n
-            return gcd(d, n % d)
-        }
     }
 }

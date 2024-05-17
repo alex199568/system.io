@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Use big integer in rational">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Use rational for V">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/V.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/V.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/N.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/N.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -263,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715954656807</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="Use rational for V">
+      <option name="closed" value="true" />
+      <created>1715955096950</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1715955096950</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -290,6 +299,7 @@
     <MESSAGE value="Times operator for rational" />
     <MESSAGE value="Div operators for rational" />
     <MESSAGE value="Use big integer in rational" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use big integer in rational" />
+    <MESSAGE value="Use rational for V" />
+    <option name="LAST_COMMIT_MESSAGE" value="Use rational for V" />
   </component>
 </project>
