@@ -37,6 +37,12 @@ data class Rational(
     }
 
     override fun toString(): String {
+
+        if (denominator == 1L) {
+            if (negative) return "-$nominator"
+            return nominator.toString()
+        }
+
         var result = ""
         val whole = nominator / denominator
         if (whole == 0L) {
@@ -46,6 +52,18 @@ data class Rational(
             result = "$whole $part/$denominator"
         }
         if (negative) return "-($result)"
+        return result
+    }
+
+    fun toFloat(): Float {
+        val result = nominator.toFloat() / denominator.toFloat()
+        if (negative) return -result
+        return result
+    }
+
+    fun toDouble(): Double {
+        val result = nominator.toDouble() / denominator.toDouble()
+        if (negative) return -result
         return result
     }
 
