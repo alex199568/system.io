@@ -1,5 +1,7 @@
 package io.system
 
+import java.math.BigInteger
+
 val Float.decimalPlaces: Int
     get() {
         var count = 0
@@ -21,3 +23,7 @@ val Double.decimalPlaces: Int
         }
         return count
     }
+
+fun Double.toBigInt(): BigInteger {
+    return toLong().toBigInteger()
+}

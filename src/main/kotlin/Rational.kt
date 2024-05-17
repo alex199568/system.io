@@ -1,16 +1,16 @@
 package io.system
 
-import kotlin.math.abs
+import java.math.BigInteger
 import kotlin.math.pow
 
 data class Rational(
-    private var nominator: Long = 0L,
-    private var denominator: Long = 1L
+    private var nominator: BigInteger = BigInteger.ZERO,
+    private var denominator: BigInteger = BigInteger.ONE
 ) {
 
     private var negative = false
 
-    private val signedNominator: Long
+    private val signedNominator: BigInteger
         get() {
             return if (negative) -nominator else nominator
         }
@@ -19,33 +19,41 @@ data class Rational(
         nominator: Int = 0,
         denominator: Int = 1
     ) : this(
-        nominator.toLong(),
-        denominator.toLong()
+        nominator.toBigInteger(),
+        denominator.toBigInteger()
+    )
+
+    constructor(
+        nominator: Long = 0L,
+        denominator: Long = 1L
+    ) : this(
+        nominator.toBigInteger(),
+        denominator.toBigInteger()
     )
 
     constructor(f: Float = 0f) : this(
-        (f * 10.0.pow(f.decimalPlaces)).toLong(),
-        10.0.pow(f.decimalPlaces).toLong()
+        (f * 10.0.pow(f.decimalPlaces)).toBigInt(),
+        10.0.pow(f.decimalPlaces).toBigInt()
     )
 
     constructor(d: Double = 0.0) : this(
-        (d * 10.0.pow(d.decimalPlaces)).toLong(),
-        10.0.pow(d.decimalPlaces).toLong()
+        (d * 10.0.pow(d.decimalPlaces)).toBigInt(),
+        10.0.pow(d.decimalPlaces).toBigInt()
     )
 
     init {
-        require(denominator != 0L)
+        require(denominator != BigInteger.ZERO)
 
-        negative = if (nominator >= 0L && denominator >= 0L) {
+        negative = if (nominator >= BigInteger.ZERO && denominator >= BigInteger.ZERO) {
             false
-        } else if (nominator < 0L && denominator < 0L) {
+        } else if (nominator < BigInteger.ZERO && denominator < BigInteger.ZERO) {
             false
         } else {
             true
         }
 
-        nominator = abs(nominator)
-        denominator = abs(denominator)
+        nominator = nominator.abs()
+        denominator = denominator.abs()
 
         val gcd = gcd(nominator, denominator)
         nominator /= gcd
@@ -54,14 +62,14 @@ data class Rational(
 
     override fun toString(): String {
 
-        if (denominator == 1L) {
+        if (denominator == BigInteger.ONE) {
             if (negative) return "-$nominator"
             return nominator.toString()
         }
 
         var result = ""
         val whole = nominator / denominator
-        if (whole == 0L) {
+        if (whole == BigInteger.ZERO) {
             result = "$nominator/$denominator"
         } else {
             val part = nominator - whole * denominator
@@ -148,11 +156,11 @@ data class Rational(
     }
 
     operator fun times(i: Int): Rational {
-        return Rational(signedNominator * i, denominator)
+        return Rational(signedNominator * i.toBigInteger(), denominator)
     }
 
     operator fun times(l: Long): Rational {
-        return Rational(signedNominator * l, denominator)
+        return Rational(signedNominator * l.toBigInteger(), denominator)
     }
 
     operator fun times(f: Float): Rational {
@@ -185,8 +193,8 @@ data class Rational(
 
     companion object {
 
-        private fun gcd(n: Long, d: Long): Long {
-            if (d == 0L) return n
+        private fun gcd(n: BigInteger, d: BigInteger): BigInteger {
+            if (d == BigInteger.ZERO) return n
             return gcd(d, n % d)
         }
     }
