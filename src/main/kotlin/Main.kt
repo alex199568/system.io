@@ -2,5 +2,7 @@ package io.system
 
 fun main() {
     val r = Rational(0.75)
-    println(r)
+    val result = r - 0.23
+    println(result)
+    println(result.toDouble())
 }

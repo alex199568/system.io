@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="toFloat and toDouble for Rational">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/N.kt" afterDir="false" />
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="double and float constructors for rational">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" afterDir="false" />
@@ -224,7 +223,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715945446174</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="double and float constructors for rational">
+      <option name="closed" value="true" />
+      <created>1715948430134</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715948430134</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -246,6 +253,7 @@
     <MESSAGE value="Negative flag for rational" />
     <MESSAGE value="Unary minus for rational" />
     <MESSAGE value="toFloat and toDouble for Rational" />
-    <option name="LAST_COMMIT_MESSAGE" value="toFloat and toDouble for Rational" />
+    <MESSAGE value="double and float constructors for rational" />
+    <option name="LAST_COMMIT_MESSAGE" value="double and float constructors for rational" />
   </component>
 </project>

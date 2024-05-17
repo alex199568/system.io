@@ -99,6 +99,22 @@ data class Rational(
         return Rational(n1 + n2, d)
     }
 
+    operator fun plus(i: Int): Rational {
+        return this + Rational(i)
+    }
+
+    operator fun plus(l: Long): Rational {
+        return this + Rational(l)
+    }
+
+    operator fun plus(f: Float): Rational {
+        return this + Rational(f)
+    }
+
+    operator fun plus(d: Double): Rational {
+        return this + Rational(d)
+    }
+
     operator fun minus(r: Rational): Rational {
         if (denominator == r.denominator) {
             return Rational(signedNominator - r.signedNominator, denominator)
@@ -109,6 +125,22 @@ data class Rational(
         val d = denominator * r.denominator
 
         return Rational(n1 - n2, d)
+    }
+
+    operator fun minus(i: Int): Rational {
+        return this - Rational(i)
+    }
+
+    operator fun minus(l: Long): Rational {
+        return this - Rational(l)
+    }
+
+    operator fun minus(f: Float): Rational {
+        return this - Rational(f)
+    }
+
+    operator fun minus(d: Double): Rational {
+        return this - Rational(d)
     }
 
     companion object {
