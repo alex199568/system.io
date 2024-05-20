@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Use rational for V">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Rational precision improvements">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Node.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/N.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/N.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -272,7 +271,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715955096950</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Rational precision improvements">
+      <option name="closed" value="true" />
+      <created>1715955959677</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1715955959677</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -300,6 +307,7 @@
     <MESSAGE value="Div operators for rational" />
     <MESSAGE value="Use big integer in rational" />
     <MESSAGE value="Use rational for V" />
-    <option name="LAST_COMMIT_MESSAGE" value="Use rational for V" />
+    <MESSAGE value="Rational precision improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Rational precision improvements" />
   </component>
 </project>
