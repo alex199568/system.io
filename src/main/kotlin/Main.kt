@@ -5,17 +5,17 @@ fun main() {
     val v2 = V(2, 3)
     val v3 = V(3, 4)
 
-    val s = Stack<V>()
-    println(s)
-    s.push(v1)
-    println(s)
-    s.push(v2)
-    println(s)
-    s.push(v3)
-    println(s)
+    val queue = Queue<V>()
+    println(queue)
+    queue.enqueue(v1)
+    println(queue)
+    queue.enqueue(v2)
+    println(queue)
+    queue.enqueue(v3)
+    println(queue)
 
-    while (s.isNotEmpty) {
-        println(s.pop())
-        println(s)
+    while (queue.isNotEmpty) {
+        println(queue.dequeue())
+        println(queue)
     }
 }

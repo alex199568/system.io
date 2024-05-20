@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Node">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Stack.kt" afterDir="false" />
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Stack">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Queue.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -22,8 +22,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Class" />
         <option value="Kotlin File" />
+        <option value="Kotlin Class" />
       </list>
     </option>
   </component>
@@ -287,11 +287,18 @@
       <option name="project" value="LOCAL" />
       <updated>1716215023075</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Stack">
+      <option name="closed" value="true" />
+      <created>1716232583806</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716232583806</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="V2" />
     <MESSAGE value="V3" />
     <MESSAGE value="V4" />
     <MESSAGE value="V" />
@@ -316,6 +323,7 @@
     <MESSAGE value="Use rational for V" />
     <MESSAGE value="Rational precision improvements" />
     <MESSAGE value="Node" />
-    <option name="LAST_COMMIT_MESSAGE" value="Node" />
+    <MESSAGE value="Stack" />
+    <option name="LAST_COMMIT_MESSAGE" value="Stack" />
   </component>
 </project>
