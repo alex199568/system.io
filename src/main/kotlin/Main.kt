@@ -5,12 +5,17 @@ fun main() {
     val v2 = V(2, 3)
     val v3 = V(3, 4)
 
-    val e1 = Node(v1)
-    val e2 = Node(v2)
-    val e3 = Node(v3)
+    val s = Stack<V>()
+    println(s)
+    s.push(v1)
+    println(s)
+    s.push(v2)
+    println(s)
+    s.push(v3)
+    println(s)
 
-    e1.next = e2
-    e2.next = e3
-
-    println(e1)
+    while (s.isNotEmpty) {
+        println(s.pop())
+        println(s)
+    }
 }
