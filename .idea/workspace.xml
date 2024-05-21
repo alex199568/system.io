@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Square sequence">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Cube sequence">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/N.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/N.kt" afterDir="false" />
     </list>
@@ -385,11 +385,18 @@
       <option name="project" value="LOCAL" />
       <updated>1716299546225</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Cube sequence">
+      <option name="closed" value="true" />
+      <created>1716299845385</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1716299845385</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Plus operator for V" />
     <MESSAGE value="Minus operator for V" />
     <MESSAGE value="Unit and length for V" />
     <MESSAGE value="Equals and hashcode for V" />
@@ -414,6 +421,7 @@
     <MESSAGE value="Even and odd sequencies" />
     <MESSAGE value="Positive sequence" />
     <MESSAGE value="Square sequence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Square sequence" />
+    <MESSAGE value="Cube sequence" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cube sequence" />
   </component>
 </project>
