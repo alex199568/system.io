@@ -11,7 +11,8 @@ fun Double.toBigInt(): BigInteger {
 val evenSequence: Sequence<Rational> = generateSequence(Rational(2)) { it + 2 }
 val oddSequence: Sequence<Rational> = generateSequence(Rational(1)) { it + 2 }
 val positiveSequence: Sequence<Rational> = generateSequence(Rational(0)) { it + 1 }
+val squareSequence: Sequence<Rational> = positiveSequence.map { it * it }
 
 fun main() {
-    positiveSequence.take(10).forEach { println(it) }
+    squareSequence.take(10).forEach { println(it) }
 }
