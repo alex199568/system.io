@@ -10,9 +10,8 @@ fun Double.toBigInt(): BigInteger {
 
 val evenSequence: Sequence<Rational> = generateSequence(Rational(2)) { it + 2 }
 val oddSequence: Sequence<Rational> = generateSequence(Rational(1)) { it + 2 }
+val positiveSequence: Sequence<Rational> = generateSequence(Rational(0)) { it + 1 }
 
 fun main() {
-    evenSequence.take(10).forEach { println(it) }
-    println("---")
-    oddSequence.take(10).forEach { println(it) }
+    positiveSequence.take(10).forEach { println(it) }
 }

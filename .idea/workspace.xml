@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Desktop">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Even and odd sequencies">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/N.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/N.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,7 @@
     "Kotlin.DesktopMain (1).executor": "Run",
     "Kotlin.DesktopMain.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
+    "Kotlin.NKt.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
@@ -359,11 +360,18 @@
       <option name="project" value="LOCAL" />
       <updated>1716295361465</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Even and odd sequencies">
+      <option name="closed" value="true" />
+      <created>1716299225816</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1716299225816</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="V" />
     <MESSAGE value="unaryMinus for V" />
     <MESSAGE value="times and div operators for V" />
     <MESSAGE value="Plus operator for V" />
@@ -388,6 +396,7 @@
     <MESSAGE value="Stack" />
     <MESSAGE value="Queue" />
     <MESSAGE value="Desktop" />
-    <option name="LAST_COMMIT_MESSAGE" value="Desktop" />
+    <MESSAGE value="Even and odd sequencies" />
+    <option name="LAST_COMMIT_MESSAGE" value="Even and odd sequencies" />
   </component>
 </project>
