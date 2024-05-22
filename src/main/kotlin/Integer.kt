@@ -57,12 +57,12 @@ class Integer() : Comparable<Integer> {
 
     val isNatural: Boolean
         get() {
-            return this >= zero
+            return this >= one
         }
 
     val isWhole: Boolean
         get() {
-            return this >= one
+            return this >= zero
         }
 
     companion object {

@@ -2,7 +2,7 @@ package io.system
 
 import java.math.BigInteger
 
-class Natural() {
+class Natural() : Comparable<Natural> {
 
     private var value: BigInteger = BigInteger.ONE
 
@@ -56,6 +56,10 @@ class Natural() {
 
     operator fun rem(n: Natural): Natural {
         return Natural(value % n.value)
+    }
+
+    override fun compareTo(other: Natural): Int {
+        return value.compareTo(other.value)
     }
 
     companion object {

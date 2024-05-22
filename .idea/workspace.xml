@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Integer operators">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Natural and whole checks for integer">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Integer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Integer.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Natural.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Natural.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Whole.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Whole.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +86,7 @@
       <recent name="desktop" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Integer">
+  <component name="RunManager" selected="Kotlin.Whole">
     <configuration name="DesktopMain" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.system.desktop.DesktopMain" />
       <module name="system.main" />
@@ -131,9 +133,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Whole" />
         <item itemvalue="Kotlin.Integer" />
         <item itemvalue="Kotlin.Natural" />
-        <item itemvalue="Kotlin.Whole" />
         <item itemvalue="Kotlin.NKt" />
         <item itemvalue="Kotlin.DesktopMain" />
       </list>
@@ -508,11 +510,18 @@
       <option name="project" value="LOCAL" />
       <updated>1716380308864</updated>
     </task>
-    <option name="localTasksCounter" value="46" />
+    <task id="LOCAL-00046" summary="Natural and whole checks for integer">
+      <option name="closed" value="true" />
+      <created>1716380871466</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1716380871466</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="More plus and minus operators for rational" />
     <MESSAGE value="Times operator for rational" />
     <MESSAGE value="Div operators for rational" />
     <MESSAGE value="Use big integer in rational" />
@@ -537,6 +546,7 @@
     <MESSAGE value="Natural" />
     <MESSAGE value="Integer" />
     <MESSAGE value="Integer operators" />
-    <option name="LAST_COMMIT_MESSAGE" value="Integer operators" />
+    <MESSAGE value="Natural and whole checks for integer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Natural and whole checks for integer" />
   </component>
 </project>

@@ -1,5 +1,6 @@
 package io.system
 
+import io.system.Natural.Companion
 import java.math.BigInteger
 
 class Whole(
@@ -68,6 +69,15 @@ class Whole(
         return this - one
     }
 
+    operator fun rem(w: Whole): Whole {
+        return Whole(value % w.value)
+    }
+
+    val isPrime: Boolean
+        get() {
+            return sequence.drop(2).takeWhile { it < this }.none { this % it == zero }
+        }
+
     companion object {
 
         val zero = Whole(0)
@@ -75,10 +85,10 @@ class Whole(
 
         @JvmStatic
         fun main(args: Array<String>) {
-
+            primeSequence.take(25).forEachIndexed { index, whole -> println("Prime[$index]=$whole") }
         }
 
         val sequence: Sequence<Whole> = generateSequence(zero) { it + one }
-
+        val primeSequence: Sequence<Whole> = sequence.drop(2).filter { it.isPrime }
     }
 }
