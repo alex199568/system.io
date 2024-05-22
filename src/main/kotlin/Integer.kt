@@ -2,7 +2,7 @@ package io.system
 
 import java.math.BigInteger
 
-class Integer() {
+class Integer() : Comparable<Integer> {
 
     private var value: BigInteger = BigInteger.ZERO
 
@@ -50,6 +50,20 @@ class Integer() {
     operator fun div(i: Integer): Integer {
         return Integer(value / i.value)
     }
+
+    override operator fun compareTo(other: Integer): Int {
+        return value.compareTo(other.value)
+    }
+
+    val isNatural: Boolean
+        get() {
+            return this >= zero
+        }
+
+    val isWhole: Boolean
+        get() {
+            return this >= one
+        }
 
     companion object {
 
