@@ -1,6 +1,5 @@
-package io.system
+package io.system.num
 
-import io.system.Natural.Companion
 import java.math.BigInteger
 
 class Whole(

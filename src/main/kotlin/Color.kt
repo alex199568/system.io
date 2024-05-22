@@ -1,5 +1,7 @@
 package io.system
 
+import io.system.num.Rational
+
 data class Color(
     val r: Rational = Rational(0),
     val g: Rational = Rational(0),

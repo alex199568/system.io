@@ -1,5 +1,6 @@
 package io.system
 
+import io.system.num.Rational
 import kotlin.math.sqrt
 
 class V(
