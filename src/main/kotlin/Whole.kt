@@ -56,7 +56,9 @@ class Whole(
 
         @JvmStatic
         fun main(args: Array<String>) {
-            println(Whole(6) / Whole(0))
+            sequence.take(10).forEach { println(it) }
         }
+
+        val sequence: Sequence<Whole> = generateSequence(Whole(0)) { it + Whole(1) }
     }
 }
