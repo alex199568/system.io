@@ -44,6 +44,10 @@ class Whole(
         return Whole(value * w.value)
     }
 
+    operator fun div(w: Whole): Whole {
+        return Whole(value / w.value)
+    }
+
     override fun hashCode(): Int {
         return value.hashCode()
     }
@@ -52,9 +56,7 @@ class Whole(
 
         @JvmStatic
         fun main(args: Array<String>) {
-            val w = Whole(3)
-            val w2 = Whole(3)
-            println(w * w2)
+            println(Whole(6) / Whole(0))
         }
     }
 }
