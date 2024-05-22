@@ -68,17 +68,6 @@ class Whole(
         return this - one
     }
 
-    infix fun downTo(w: Whole): ClosedRange<Whole> {
-        return object : ClosedRange<Whole> {
-
-            override val endInclusive: Whole
-                get() = w
-
-            override val start: Whole
-                get() = this@Whole
-        }
-    }
-
     companion object {
 
         val zero = Whole(0)
@@ -86,33 +75,10 @@ class Whole(
 
         @JvmStatic
         fun main(args: Array<String>) {
-            val r = Whole(20) downTo Whole(10)
-            for (w in r) {
-                println(w)
-            }
+
         }
 
         val sequence: Sequence<Whole> = generateSequence(zero) { it + one }
 
-    }
-}
-
-operator fun ClosedRange<Whole>.iterator(): Iterator<Whole> {
-    val up = start <= endInclusive
-    return object : Iterator<Whole> {
-
-        private var current = if (up) start - Whole.one else start + Whole.one
-
-        override fun hasNext(): Boolean {
-            return current != endInclusive
-        }
-
-        override fun next(): Whole {
-            if (up)
-                current++
-            else
-                current--
-            return current
-        }
     }
 }
