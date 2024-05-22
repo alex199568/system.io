@@ -35,12 +35,34 @@ class Integer() {
         return value.hashCode()
     }
 
+    operator fun plus(i: Integer): Integer {
+        return Integer(value + i.value)
+    }
+
+    operator fun minus(i: Integer): Integer {
+        return Integer(value - i.value)
+    }
+
+    operator fun times(i: Integer): Integer {
+        return Integer(value * i.value)
+    }
+
+    operator fun div(i: Integer): Integer {
+        return Integer(value / i.value)
+    }
+
     companion object {
+
+        val zero = Integer(0)
+        val one = Integer(1)
+        val minusOne = Integer(-1)
 
         @JvmStatic
         fun main(args: Array<String>) {
-            val i = Integer(4)
-            println(i == Integer(4))
+            negative.take(10).forEach { println(it) }
         }
+
+        val positive: Sequence<Integer> = generateSequence(zero) { it + one }
+        val negative: Sequence<Integer> = generateSequence(zero) { it + minusOne }
     }
 }

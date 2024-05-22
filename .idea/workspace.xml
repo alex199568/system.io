@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Natural">
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Natural.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Natural.kt" afterDir="false" />
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Integer">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Integer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Integer.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,6 +61,7 @@
     "Gradle.Build system.executor": "Run",
     "Kotlin.DesktopMain (1).executor": "Run",
     "Kotlin.DesktopMain.executor": "Run",
+    "Kotlin.Integer.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
     "Kotlin.NKt.executor": "Run",
     "Kotlin.Natural.executor": "Run",
@@ -82,7 +84,7 @@
       <recent name="desktop" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Natural">
+  <component name="RunManager" selected="Kotlin.Integer">
     <configuration name="DesktopMain" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.system.desktop.DesktopMain" />
       <module name="system.main" />
@@ -92,10 +94,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.system.MainKt" />
+    <configuration name="Integer" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.system.Integer" />
       <module name="system.main" />
-      <shortenClasspath name="NONE" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,18 +123,18 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Kotlin.Integer" />
       <item itemvalue="Kotlin.NKt" />
       <item itemvalue="Kotlin.Natural" />
       <item itemvalue="Kotlin.Whole" />
       <item itemvalue="Kotlin.DesktopMain" />
-      <item itemvalue="Kotlin.MainKt" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Integer" />
         <item itemvalue="Kotlin.Natural" />
         <item itemvalue="Kotlin.Whole" />
         <item itemvalue="Kotlin.NKt" />
-        <item itemvalue="Kotlin.DesktopMain" />
         <item itemvalue="Kotlin.DesktopMain" />
       </list>
     </recent_temporary>
@@ -483,11 +484,26 @@
       <option name="project" value="LOCAL" />
       <updated>1716378656738</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="Natural">
+      <option name="closed" value="true" />
+      <created>1716378707863</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1716378707863</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Integer">
+      <option name="closed" value="true" />
+      <created>1716379316145</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1716379316145</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="toFloat and toDouble for Rational" />
     <MESSAGE value="double and float constructors for rational" />
     <MESSAGE value="More plus and minus operators for rational" />
     <MESSAGE value="Times operator for rational" />
@@ -512,6 +528,7 @@
     <MESSAGE value="Whole closed range" />
     <MESSAGE value="Remove range from whole" />
     <MESSAGE value="Natural" />
-    <option name="LAST_COMMIT_MESSAGE" value="Natural" />
+    <MESSAGE value="Integer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Integer" />
   </component>
 </project>
