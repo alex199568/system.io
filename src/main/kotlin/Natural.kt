@@ -60,9 +60,13 @@ class Natural() {
 
     companion object {
 
+        val one = Natural(1)
+
         @JvmStatic
         fun main(args: Array<String>) {
-            println(Natural(8) % Natural(5))
+            sequence.take(10).forEach { println(it) }
         }
+
+        val sequence = generateSequence(one) { it + one }
     }
 }
