@@ -31,6 +31,10 @@ class Whole(
         return value.compareTo(other.value)
     }
 
+    operator fun compareTo(other: BigInteger): Int {
+        return value.compareTo(other)
+    }
+
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (javaClass != other?.javaClass) return false
@@ -74,7 +78,8 @@ class Whole(
 
     val isPrime: Boolean
         get() {
-            return sequence.drop(2).takeWhile { it < this }.none { this % it == zero }
+            val s = value.sqrt()
+            return sequence.drop(2).takeWhile { it <= s }.none { this % it == zero }
         }
 
     companion object {
