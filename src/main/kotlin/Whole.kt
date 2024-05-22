@@ -18,6 +18,11 @@ class Whole(
         value = BigInteger.valueOf(l)
     }
 
+    constructor(bi: BigInteger) : this() {
+        require(bi >= BigInteger.ZERO)
+        value = bi
+    }
+
     override fun toString(): String {
         return value.toString()
     }
@@ -31,6 +36,14 @@ class Whole(
         return value == other.value
     }
 
+    operator fun plus(w: Whole): Whole {
+        return Whole(value + w.value)
+    }
+
+    operator fun times(w: Whole): Whole {
+        return Whole(value * w.value)
+    }
+
     override fun hashCode(): Int {
         return value.hashCode()
     }
@@ -41,7 +54,7 @@ class Whole(
         fun main(args: Array<String>) {
             val w = Whole(3)
             val w2 = Whole(3)
-            println(w == w2)
+            println(w * w2)
         }
     }
 }
