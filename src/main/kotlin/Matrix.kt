@@ -95,6 +95,22 @@ class Matrix(
         return result
     }
 
+    operator fun times(r: Rational): Matrix {
+        val result = Matrix(n, m)
+
+        for (i in 0 until n) {
+            for (j in 0 until m) {
+                result[i, j] = this[i, j] * r
+            }
+        }
+
+        return result
+    }
+
+    operator fun times(i: Int): Matrix {
+        return this * Rational(i)
+    }
+
     companion object {
 
         @JvmStatic
@@ -103,11 +119,7 @@ class Matrix(
                 arrayOf(1, 2),
                 arrayOf(4, 5)
             )
-            val m2 = Matrix(
-                arrayOf(2, 3),
-                arrayOf(6, 7)
-            )
-            val result = m2 - m1
+            val result = m1 * 3
             println(result)
         }
     }
