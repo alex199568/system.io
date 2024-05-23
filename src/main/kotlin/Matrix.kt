@@ -34,6 +34,20 @@ class Matrix() {
         return sb.toString()
     }
 
+    override fun equals(other: Any?): Boolean {
+        if (this === other) return true
+        if (javaClass != other?.javaClass) return false
+
+        other as Matrix
+
+        return rows == other.rows
+    }
+
+    override fun hashCode(): Int {
+        return rows.hashCode()
+    }
+
+
     companion object {
 
         @JvmStatic
@@ -43,7 +57,13 @@ class Matrix() {
                 listOf(Rational(0), Rational(3)),
                 listOf(Rational(4))
             )
+            val m2 = Matrix(
+                listOf(Rational(1), Rational(2), Rational(1)),
+                listOf(Rational(0), Rational(3)),
+                listOf(Rational(4))
+            )
             println(m)
+            println(m == m2)
         }
     }
 }
