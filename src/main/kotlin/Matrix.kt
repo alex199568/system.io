@@ -48,13 +48,18 @@ class Matrix(
     override fun toString(): String {
         val sb = StringBuilder()
 
+        val maxLength = elements.flatten().map { it.toString().length }.max()
+
         for (i in 0 until n) {
+            sb.append("| ")
             for (j in 0 until m) {
                 val r = elements[i][j]
-                sb.append(r)
-                sb.append(" ")
+                val rString = r.toString()
+                sb.append(rString)
+                val spaces = maxLength - rString.length + 1
+                sb.append(" ".repeat(spaces))
             }
-            sb.append("\n")
+            sb.append("|\n")
         }
 
         return sb.toString()
@@ -65,22 +70,18 @@ class Matrix(
 
         @JvmStatic
         fun main(args: Array<String>) {
-            val m = Matrix(2, 3)
-            m[0, 0] = Rational(2)
-            m[1, 2] = Rational(3)
+            val m = Matrix(
+                arrayOf(1, 2),
+                arrayOf(3, 4)
+            )
             println(m)
+
             val m2 = Matrix(
-                arrayOf(Rational(2), Rational(0), Rational(1)),
-                arrayOf(Rational(0), Rational(3))
+                arrayOf(1, -1, 2),
+                arrayOf(3, 2, 6),
+                arrayOf(4, -2, 5)
             )
             println(m2)
-
-            val m3 = Matrix(
-                arrayOf(1, 2),
-                arrayOf(0, 8),
-                arrayOf(3, 9)
-            )
-            println(m3)
         }
     }
 }
