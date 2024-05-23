@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Prime sequence">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="isPrime optimization">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Matrix.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Color.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Color.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Integer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/num/Integer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/N.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/num/N.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Natural.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/num/Natural.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Rational.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/num/Rational.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/V.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/V.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Whole.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/num/Whole.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/num/Whole.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/num/Whole.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +64,7 @@
     "Kotlin.DesktopMain.executor": "Run",
     "Kotlin.Integer.executor": "Run",
     "Kotlin.MainKt.executor": "Run",
+    "Kotlin.Matrix.executor": "Run",
     "Kotlin.NKt.executor": "Run",
     "Kotlin.Natural.executor": "Run",
     "Kotlin.Whole (1).executor": "Run",
@@ -95,7 +91,7 @@
       <recent name="desktop" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Whole (1)">
+  <component name="RunManager" selected="Kotlin.Matrix">
     <configuration name="Integer" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.system.Integer" />
       <module name="system.main" />
@@ -103,8 +99,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.system.num.NKt" />
+    <configuration name="Matrix" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.system.Matrix" />
       <module name="system.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -133,18 +129,18 @@
     </configuration>
     <list>
       <item itemvalue="Kotlin.Integer" />
-      <item itemvalue="Kotlin.NKt" />
+      <item itemvalue="Kotlin.Matrix" />
       <item itemvalue="Kotlin.Natural" />
       <item itemvalue="Kotlin.Whole" />
       <item itemvalue="Kotlin.Whole (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Matrix" />
         <item itemvalue="Kotlin.Whole (1)" />
         <item itemvalue="Kotlin.Whole" />
         <item itemvalue="Kotlin.Integer" />
         <item itemvalue="Kotlin.Natural" />
-        <item itemvalue="Kotlin.NKt" />
       </list>
     </recent_temporary>
   </component>
@@ -533,12 +529,26 @@
       <option name="project" value="LOCAL" />
       <updated>1716381547443</updated>
     </task>
-    <option name="localTasksCounter" value="48" />
+    <task id="LOCAL-00048" summary="num package">
+      <option name="closed" value="true" />
+      <created>1716395733770</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1716395733770</updated>
+    </task>
+    <task id="LOCAL-00049" summary="isPrime optimization">
+      <option name="closed" value="true" />
+      <created>1716395858861</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1716395858861</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Div operators for rational" />
-    <MESSAGE value="Use big integer in rational" />
     <MESSAGE value="Use rational for V" />
     <MESSAGE value="Rational precision improvements" />
     <MESSAGE value="Node" />
@@ -562,6 +572,8 @@
     <MESSAGE value="Integer operators" />
     <MESSAGE value="Natural and whole checks for integer" />
     <MESSAGE value="Prime sequence" />
-    <option name="LAST_COMMIT_MESSAGE" value="Prime sequence" />
+    <MESSAGE value="num package" />
+    <MESSAGE value="isPrime optimization" />
+    <option name="LAST_COMMIT_MESSAGE" value="isPrime optimization" />
   </component>
 </project>

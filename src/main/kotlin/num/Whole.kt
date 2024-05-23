@@ -89,7 +89,7 @@ class Whole(
 
         @JvmStatic
         fun main(args: Array<String>) {
-            primeSequence.take(25).forEachIndexed { index, whole -> println("Prime[$index]=$whole") }
+            primeSequence.forEachIndexed { index, whole -> println("Prime[$index]=$whole") }
         }
 
         val sequence: Sequence<Whole> = generateSequence(zero) { it + one }
