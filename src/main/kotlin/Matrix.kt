@@ -54,12 +54,18 @@ class Matrix(
             sb.append("| ")
             for (j in 0 until m) {
                 val r = elements[i][j]
+                if (r >= 0) {
+                    sb.append(" ")
+                }
                 val rString = r.toString()
                 sb.append(rString)
-                val spaces = maxLength - rString.length + 1
+                val spaces = maxLength - rString.length
                 sb.append(" ".repeat(spaces))
+                if (r < 0) {
+                    sb.append(" ")
+                }
             }
-            sb.append("|\n")
+            sb.append(" |\n")
         }
 
         return sb.toString()
