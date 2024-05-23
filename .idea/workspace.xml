@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Int constructor for matrix">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Better tostring for matrix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Matrix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Matrix.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/num/Rational.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/num/Rational.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +66,7 @@
     "Kotlin.Matrix.executor": "Run",
     "Kotlin.NKt.executor": "Run",
     "Kotlin.Natural.executor": "Run",
+    "Kotlin.Rational.executor": "Run",
     "Kotlin.Whole (1).executor": "Run",
     "Kotlin.Whole.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -90,7 +91,7 @@
       <recent name="desktop" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.Matrix">
+  <component name="RunManager" selected="Kotlin.Rational">
     <configuration name="Integer" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="io.system.Integer" />
       <module name="system.main" />
@@ -105,8 +106,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Natural" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="io.system.Natural" />
+    <configuration name="Rational" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="io.system.num.Rational" />
       <module name="system.main" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,17 +130,17 @@
     <list>
       <item itemvalue="Kotlin.Integer" />
       <item itemvalue="Kotlin.Matrix" />
-      <item itemvalue="Kotlin.Natural" />
+      <item itemvalue="Kotlin.Rational" />
       <item itemvalue="Kotlin.Whole" />
       <item itemvalue="Kotlin.Whole (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.Rational" />
         <item itemvalue="Kotlin.Matrix" />
         <item itemvalue="Kotlin.Whole (1)" />
         <item itemvalue="Kotlin.Whole" />
         <item itemvalue="Kotlin.Integer" />
-        <item itemvalue="Kotlin.Natural" />
       </list>
     </recent_temporary>
   </component>
@@ -151,14 +152,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715885181940</updated>
-    </task>
-    <task id="LOCAL-00006" summary="unaryMinus for V">
-      <option name="closed" value="true" />
-      <created>1715888109109</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1715888109109</updated>
     </task>
     <task id="LOCAL-00007" summary="times and div operators for V">
       <option name="closed" value="true" />
@@ -544,11 +537,18 @@
       <option name="project" value="LOCAL" />
       <updated>1716468866734</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="Better tostring for matrix">
+      <option name="closed" value="true" />
+      <created>1716469333587</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1716469333587</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Desktop" />
     <MESSAGE value="Even and odd sequencies" />
     <MESSAGE value="Positive sequence" />
     <MESSAGE value="Square sequence" />
@@ -573,6 +573,7 @@
     <MESSAGE value="2d array for matrix" />
     <MESSAGE value="Rows constructor for matrix" />
     <MESSAGE value="Int constructor for matrix" />
-    <option name="LAST_COMMIT_MESSAGE" value="Int constructor for matrix" />
+    <MESSAGE value="Better tostring for matrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Better tostring for matrix" />
   </component>
 </project>

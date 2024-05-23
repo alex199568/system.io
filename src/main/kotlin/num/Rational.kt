@@ -7,7 +7,7 @@ import kotlin.math.pow
 data class Rational(
     private var nominator: BigInteger = BigInteger.ZERO,
     private var denominator: BigInteger = BigInteger.ONE
-) {
+) : Comparable<Rational> {
 
     private var negative = false
 
@@ -190,5 +190,27 @@ data class Rational(
 
     operator fun div(d: Double): Rational {
         return this / Rational(d)
+    }
+
+    override operator fun compareTo(other: Rational): Int {
+        if (denominator == other.denominator) return signedNominator.compareTo(other.signedNominator)
+
+        val n1 = signedNominator * other.denominator
+        val n2 = other.signedNominator * denominator
+
+        return n1.compareTo(n2)
+    }
+
+    operator fun compareTo(i: Int): Int {
+        return compareTo(Rational(i))
+    }
+
+    companion object {
+
+        @JvmStatic
+        fun main(args: Array<String>) {
+            val r1 = Rational(7, 17)
+            println(r1 < 1)
+        }
     }
 }
