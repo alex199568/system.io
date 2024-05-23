@@ -83,6 +83,18 @@ class Matrix(
         return result
     }
 
+    operator fun minus(other: Matrix): Matrix {
+        val result = Matrix(n, m)
+
+        for (i in 0 until n) {
+            for (j in 0 until m) {
+                result[i, j] = this[i, j] - other[i, j]
+            }
+        }
+
+        return result
+    }
+
     companion object {
 
         @JvmStatic
@@ -95,7 +107,7 @@ class Matrix(
                 arrayOf(2, 3),
                 arrayOf(6, 7)
             )
-            val result = m1 + m2
+            val result = m2 - m1
             println(result)
         }
     }

@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Matrix toString improvements">
+    <list default="true" id="7f90f751-e3a6-4fcf-be6c-341a4f73e90c" name="Changes" comment="Plus operator for matrix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Matrix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Matrix.kt" afterDir="false" />
     </list>
@@ -152,14 +152,6 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715885181940</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Minus operator for V">
-      <option name="closed" value="true" />
-      <created>1715888745490</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1715888745490</updated>
     </task>
     <task id="LOCAL-00010" summary="Unit and length for V">
       <option name="closed" value="true" />
@@ -545,11 +537,18 @@
       <option name="project" value="LOCAL" />
       <updated>1716469930642</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="Plus operator for matrix">
+      <option name="closed" value="true" />
+      <created>1716470293689</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1716470293689</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Square sequence" />
     <MESSAGE value="Cube sequence" />
     <MESSAGE value="Fibonacci sequence" />
     <MESSAGE value="Whole" />
@@ -574,6 +573,7 @@
     <MESSAGE value="Better tostring for matrix" />
     <MESSAGE value="Compare rationals" />
     <MESSAGE value="Matrix toString improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Matrix toString improvements" />
+    <MESSAGE value="Plus operator for matrix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Plus operator for matrix" />
   </component>
 </project>
