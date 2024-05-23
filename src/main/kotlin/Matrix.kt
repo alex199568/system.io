@@ -13,6 +13,18 @@ class Matrix(
         }
     }
 
+    constructor(
+        vararg rows: Array<Rational>
+    ) : this(rows.size, rows.maxOf { it.size }) {
+        for (i in 0 until n) {
+            for (j in 0 until m) {
+                if (j < rows[i].size) {
+                    this[i, j] = rows[i][j]
+                }
+            }
+        }
+    }
+
     operator fun get(i: Int, j: Int): Rational {
         return elements[i][j]
     }
@@ -45,6 +57,11 @@ class Matrix(
             m[0, 0] = Rational(2)
             m[1, 2] = Rational(3)
             println(m)
+            val m2 = Matrix(
+                arrayOf(Rational(2), Rational(0), Rational(1)),
+                arrayOf(Rational(0), Rational(3))
+            )
+            println(m2)
         }
     }
 }
