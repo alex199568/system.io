@@ -71,23 +71,32 @@ class Matrix(
         return sb.toString()
     }
 
+    operator fun plus(other: Matrix): Matrix {
+        val result = Matrix(n, m)
+
+        for (i in 0 until n) {
+            for (j in 0 until m) {
+                result[i, j] = this[i, j] + other[i, j]
+            }
+        }
+
+        return result
+    }
 
     companion object {
 
         @JvmStatic
         fun main(args: Array<String>) {
-            val m = Matrix(
+            val m1 = Matrix(
                 arrayOf(1, 2),
-                arrayOf(3, 4)
+                arrayOf(4, 5)
             )
-            println(m)
-
             val m2 = Matrix(
-                arrayOf(1, -1, 2),
-                arrayOf(3, 2, 6),
-                arrayOf(4, -2, 5)
+                arrayOf(2, 3),
+                arrayOf(6, 7)
             )
-            println(m2)
+            val result = m1 + m2
+            println(result)
         }
     }
 }
